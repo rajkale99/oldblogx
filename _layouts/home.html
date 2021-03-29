@@ -2,21 +2,23 @@
 layout: default
 ---
 
-<div class="catalogue">
-  {% for post in paginator.posts %}
+<div class="container">
+    {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          {{ post.content | strip_html | truncatewords: 30 }}
-        </p>
-
-      </div>
-    </a>
-  {% endfor %}
+  <div class="row">
+    <div class="col col-8 push-2 col-d-10 col-m-12 push-d-1 push-m-0">
+      <!-- begin page -->
+      <article class="page animate">
+        <div class="page-head">
+          <h1 class="page-title">{{ page.title | escape }}</h1>
+        </div>
+        <div class="page__content">
+          {{ content }}
+        </div>
+      </article>
+      <!-- end page -->
+    </div>
+  </div>
 </div>
 
 {% include ads.html %}
