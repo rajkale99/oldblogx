@@ -6,13 +6,13 @@
 html,
 body {
   color: $default-color;
-  background-color: #191919;
+  background-color: #121212;
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-family: $serif-primary;
+  font-family: "Inconsolata";
   font-size: 14px;
   overflow-y: scroll;
 
@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   color: #fff;
-  font-family: $sans-serif;
+  font-family: "Inconsolata";
   line-height: normal;
 }
 
