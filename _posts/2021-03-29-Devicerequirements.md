@@ -3,6 +3,7 @@ layout: post
 title: Device Requirements
 subtitle: Device side requirements for OFFICIAL
 tags: [Maintaining OFFICIALLY]
+comments: true
 ---
 
 <p align="center">
